@@ -1,5 +1,6 @@
 /*
  Modified for Cosee: independent app configuration, resource monitoring, distribution support, or formatting.
+ Modified for Cosee: explicit bundled assets support Swift Package Manager toolchains.
  SettingsView.swift
  UserInterface
 
@@ -43,7 +44,7 @@ struct SettingsView: View {
                     Label {
                         Text("runnerTab", bundle: .module)
                     } icon: {
-                        Image(.runcat)
+                        Image("runcat", bundle: .module)
                     }
                 }
                 .tag(SettingsTab.runner)

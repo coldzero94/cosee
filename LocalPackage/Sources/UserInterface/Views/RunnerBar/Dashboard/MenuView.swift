@@ -87,7 +87,7 @@ struct MenuView: View {
                 Label {
                     Text("openActivityMonitor", bundle: .module)
                 } icon: {
-                    Image(.activityMonitor)
+                    Image("activity-monitor", bundle: .module)
                 }
             }
             Divider()

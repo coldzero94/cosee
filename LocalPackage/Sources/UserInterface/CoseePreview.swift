@@ -52,11 +52,16 @@ public enum CoseePreview {
             isAccessory: true
         )
         func history(base: UInt64, growth: UInt64, cpu: Double) -> [ProcessHistoryPoint] {
-            (0...60).map { step in
-                .init(
+            (0...60).map { (step: Int) -> ProcessHistoryPoint in
+                let elapsed = Double(step)
+                let progress = elapsed / 60
+                let variation = sin(elapsed / 4) * 0.15
+                let activity = cpu + cpu * variation
+                let memory = base + UInt64(Double(growth) * progress)
+                return ProcessHistoryPoint(
                     timestamp: Double(step * 5),
-                    cpuPercent: cpu + sin(Double(step) / 4) * cpu * 0.15,
-                    footprintBytes: base + UInt64(Double(growth) * Double(step) / 60)
+                    cpuPercent: activity,
+                    footprintBytes: memory
                 )
             }
         }

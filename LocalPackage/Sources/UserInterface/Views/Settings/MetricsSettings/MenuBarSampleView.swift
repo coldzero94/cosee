@@ -1,4 +1,5 @@
 /*
+ Modified for Cosee: explicit bundled assets support Swift Package Manager toolchains.
  MenuBarSampleView.swift
  UserInterface
 
@@ -27,11 +28,11 @@ struct MenuBarSampleView: View {
         Canvas { context, size in
             context.fill(
                 Path(CGRect(origin: .zero, size: size)),
-                with: .color(Color(.desktop))
+                with: .color(Color("desktop", bundle: .module))
             )
             context.fill(
                 Path(CGRect(x: 0, y: 0, width: size.width, height: 42)),
-                with: .color(Color(.menubar))
+                with: .color(Color("menubar", bundle: .module))
             )
 
             // bezel
@@ -104,8 +105,12 @@ struct MenuBarSampleView: View {
             }
 
             let area = Path(roundedRect: CGRect(x: size.width - 220, y: 22, width: 120, height: 18), cornerRadius: 4)
-            context.fill(area, with: .color(Color(.focus).opacity(0.5)))
-            context.stroke(area, with: .color(Color(.focus)), style: .init(lineWidth: 1, dash: [2, 2]))
+            context.fill(area, with: .color(Color("focus", bundle: .module).opacity(0.5)))
+            context.stroke(
+                area,
+                with: .color(Color("focus", bundle: .module)),
+                style: .init(lineWidth: 1, dash: [2, 2])
+            )
 
             // default icons
             context.draw(

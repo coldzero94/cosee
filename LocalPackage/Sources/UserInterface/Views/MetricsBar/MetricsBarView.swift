@@ -67,7 +67,7 @@ struct MetricsBarView: View {
         Image(size: size) { context in
             if store.metricsBarConfiguration.isEmpty {
                 context.drawBlackImage(origin: .zero, size: IndicatorKind.sleepingCat.size) {
-                    Image(.sleepingCat)
+                    Image("sleeping-cat", bundle: .module)
                 }
             } else {
                 var point = CGPoint(x: 0, y: 1)
