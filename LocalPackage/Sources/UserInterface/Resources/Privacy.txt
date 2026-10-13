@@ -1,0 +1,21 @@
+Cosee Privacy
+
+Cosee samples process names, process identifiers, application paths, CPU time,
+and memory footprint locally on your Mac. Readings are used to show app usage
+and resource insights. Recent readings are held in memory and are cleared when
+Cosee quits. No analytics, accounts, cloud processing, or automatic uploads are
+included. Process names and resource readings are not written to diagnostic logs.
+
+Preferences and imported custom runner data are saved in your user account,
+under io.cosee.mac preferences and ~/Library/Application Support/Cosee.
+Custom metrics read only the local JSON files you explicitly select.
+
+Cosee sends a normal quit request only after you select an application and
+confirm. The application may ask you to save work or decline to quit.
+
+External links open in your browser only when you choose them. Websites have
+their own privacy policies. Cosee currently has no automatic update service.
+
+To uninstall, disable Launch at Login in Cosee settings, quit Cosee, and remove
+Cosee.app from Applications. Preferences and imported data can be removed
+separately.

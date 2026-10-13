@@ -1,0 +1,6 @@
+Cosee is derived from RunCat Neo, Copyright 2026 Kyome22 (Takuto Nakamura).
+Source: https://github.com/runcat-dev/RunCatNeo
+Baseline: b3b1543049ea0a051ecb78654a45f144724ea737
+Modified for Cosee: process monitoring, resource insights, application termination,
+independent identity, local privacy information, and direct distribution tooling.
+See LICENSE and LocalPackage/Sources/UserInterface/Resources/ThirdPartyNotices.txt.

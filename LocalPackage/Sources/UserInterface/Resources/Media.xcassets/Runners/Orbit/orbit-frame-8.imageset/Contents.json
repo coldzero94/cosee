@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "orbit-frame-8.png",
+      "idiom" : "mac"
+    }
+  ],
+  "info" : {
+    "author" : "Cosee",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

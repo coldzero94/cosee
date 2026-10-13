@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "orbit-idle-frame-14.png",
+      "idiom" : "mac"
+    }
+  ],
+  "info" : {
+    "author" : "Cosee",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
